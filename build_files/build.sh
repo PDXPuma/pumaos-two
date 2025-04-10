@@ -10,7 +10,14 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+
+/ctx/branding.sh
+
+dnf5 install -y alacritty python-pywlroots qtile qtile-extras wlroots rofi-wayland
+
+dnf5 install -y @base-x
+
+dnf5 install -y swaybg
 
 # Use a COPR Example:
 #
