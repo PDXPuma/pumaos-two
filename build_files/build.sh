@@ -13,9 +13,9 @@ set -ouex pipefail
 
 /ctx/branding.sh
 
-dnf5 install -y alacritty python-pywlroots qtile qtile-extras wlroots rofi-wayland
-
 dnf5 install -y @base-x
+
+dnf5 install -y alacritty python-pywlroots qtile qtile-extras wlroots rofi-wayland emacs nitrogen
 
 dnf5 install -y swaybg
 
